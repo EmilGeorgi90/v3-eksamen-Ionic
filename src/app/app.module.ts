@@ -4,8 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryService } from './in-memory.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { fakeBackendProvider } from './_helpers/fake-backend';
 
@@ -46,9 +44,6 @@ import { MomentModule } from 'ngx-moment';
     FormsModule,
     HttpModule,
     MomentModule,
-    HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryService, { dataEncapsulation: false }
-    ),
     FontAwesomeModule,
     NgbModule
   ],
