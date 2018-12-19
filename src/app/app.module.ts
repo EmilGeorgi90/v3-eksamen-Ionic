@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import { fakeBackendProvider } from './_helpers/fake-backend';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -50,8 +49,6 @@ import { MomentModule } from 'ngx-moment';
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
-    // provider used to create fake backend
-    fakeBackendProvider
 ],
   bootstrap: [AppComponent]
 })
