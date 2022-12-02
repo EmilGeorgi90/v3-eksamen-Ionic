@@ -434,6 +434,13 @@
     semver "5.5.1"
     semver-intersect "1.4.0"
 
+"@types/cordova-plugin-file-transfer@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@types/cordova-plugin-file-transfer/-/cordova-plugin-file-transfer-1.6.2.tgz#fd87d3f91781a1519dab8b87723d756eefdda998"
+  integrity sha512-jWZQefyVn/GiQAdummRoY1v5cUY4dT7GNk3Hg40iUtL68y40jKWD3ALAtMM4pnYt9RSMTlsgs1I7/apXexddvw==
+  dependencies:
+    cordova-plugin-file-transfer "*"
+
 "@types/cordova@latest":
   version "0.0.34"
   resolved "https://registry.yarnpkg.com/@types/cordova/-/cordova-0.0.34.tgz#ea7addf74ecec3d7629827a0c39e2c9addc73d04"
@@ -724,6 +731,13 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
+
+angular-moment@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/angular-moment/-/angular-moment-1.3.0.tgz#f501f66b6fcc832d8d36f8905cc7a93123ab2af0"
+  integrity sha512-KG8rvO9MoaBLwtGnxTeUveSyNtrL+RNgGl1zqWN36+HDCCVGk2DGWOzqKWB6o+eTTbO3Opn4hupWKIElc8XETA==
+  dependencies:
+    moment ">=2.8.0 <3.0.0"
 
 ansi-colors@^3.0.0:
   version "3.2.3"
@@ -1079,6 +1093,11 @@ base64-js@^1.0.2:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.0.tgz#cab1e6118f051095e58b5281aea8c1cd22bfc0e3"
   integrity sha512-ccav/yGvoa80BQDljCxsmmQ3Xvx60/UpBIij5QN21W3wBi/hhIC9OoO+KLpu9IJTS9j4DRVJ3aDDF9cMSoa2lw==
+
+base64-js@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
+  integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
 
 base64id@1.0.0:
   version "1.0.0"
@@ -1852,6 +1871,22 @@ copy-webpack-plugin@4.5.4:
     p-limit "^1.0.0"
     serialize-javascript "^1.4.0"
 
+cordova-plugin-file-transfer@*:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-file-transfer/-/cordova-plugin-file-transfer-1.7.1.tgz#a75d8be2ebc3bb9b23c5b1bbd199214ec267586b"
+  integrity sha512-SKYdtSRzfssejNTwRLPZKv4LU3a6uA95KpQFQb1PlJHsCVkNO+Ituu2hbBwr5NUr/dBfcGvtYBQyQ5MqfMylTw==
+
+cordova-plugin-ionic@5.2.8:
+  version "5.2.8"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-ionic/-/cordova-plugin-ionic-5.2.8.tgz#b77eb2b5301a7d6cb944cf9e0086de4b10de9940"
+  integrity sha512-S6mW4IqZsWqL9eKcmugMnpthIlC91FSkfsVEKcTyxGiJPafWJ/iVuQ5D7vRUjvSI8v5nidzMVkiP4OqyWYVsEg==
+  dependencies:
+    "@types/cordova-plugin-file-transfer" "^1.6.2"
+    mkpath ">=1.0.0"
+    node-version-compare ">=1.0.1"
+    plist ">=1.2.0"
+    xml2js ">=0.4"
+
 core-js@^2.2.0, core-js@^2.4.0, core-js@^2.5.4:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.1.tgz#87416ae817de957a3f249b3b5ca475d4aaed6042"
@@ -2054,9 +2089,9 @@ decamelize@^2.0.0:
     xregexp "4.0.0"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-equal@^1.0.1:
   version "1.0.1"
@@ -4612,10 +4647,20 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0:
   dependencies:
     minimist "0.0.8"
 
+mkpath@>=1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mkpath/-/mkpath-1.0.0.tgz#ebb3a977e7af1c683ae6fda12b545a6ba6c5853d"
+  integrity sha512-PbNHr7Y/9Y/2P5pKFv5XOGBfNQqZ+fdiHWcuf7swLACN5ZW5LU7J5tMU8LSBjpluAxAxKYGD9nnaIbdRy9+m1w==
+
 moment@2.18.1:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
   integrity sha1-w2GT3Tzhwu7SrbfIAtu8d6gbHA8=
+
+"moment@>=2.8.0 <3.0.0":
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 moment@^2.23.0:
   version "2.23.0"
@@ -4826,6 +4871,11 @@ node-sass@4.9.3:
     sass-graph "^2.2.4"
     stdout-stream "^1.4.0"
     "true-case-path" "^1.0.2"
+
+node-version-compare@>=1.0.1:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/node-version-compare/-/node-version-compare-1.0.3.tgz#ca6d2005e67822fb4dfa259e08f1f6cfaabe2e81"
+  integrity sha512-unO5GpBAh5YqeGULMLpmDT94oanSDMwtZB8KHTKCH/qrGv8bHN0mlDj9xQDAicCYXv2OLnzdi67lidCrcVotVw==
 
 "nopt@2 || 3", nopt@3.x:
   version "3.0.6"
@@ -5367,6 +5417,14 @@ pkg-dir@^3.0.0:
   integrity sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==
   dependencies:
     find-up "^3.0.0"
+
+plist@>=1.2.0:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/plist/-/plist-3.0.6.tgz#7cfb68a856a7834bca6dbfe3218eb9c7740145d3"
+  integrity sha512-WiIVYyrp8TD4w8yCvyeIr+lkmrGRd5u0VbRnU+tP/aRLxP/YadJUYOMZJ/6hIa3oUyVCsycXvtNRgd5XBJIbiA==
+  dependencies:
+    base64-js "^1.5.1"
+    xmlbuilder "^15.1.1"
 
 portfinder@1.0.17:
   version "1.0.17"
@@ -7485,6 +7543,14 @@ ws@~3.3.1:
     safe-buffer "~5.1.0"
     ultron "~1.1.0"
 
+xml2js@>=0.4:
+  version "0.4.23"
+  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.23.tgz#a0c69516752421eb2ac758ee4d4ccf58843eac66"
+  integrity sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==
+  dependencies:
+    sax ">=0.6.0"
+    xmlbuilder "~11.0.0"
+
 xml2js@^0.4.17:
   version "0.4.19"
   resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.19.tgz#686c20f213209e94abf0d1bcf1efaa291c7827a7"
@@ -7492,6 +7558,16 @@ xml2js@^0.4.17:
   dependencies:
     sax ">=0.6.0"
     xmlbuilder "~9.0.1"
+
+xmlbuilder@^15.1.1:
+  version "15.1.1"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-15.1.1.tgz#9dcdce49eea66d8d10b42cae94a79c3c8d0c2ec5"
+  integrity sha512-yMqGBqtXyeN1e3TGYvgNgDVZ3j84W4cwkOXQswghol6APgZWaff9lnbvN7MHYJOiXsvGPXtjTYJEiC9J2wv9Eg==
+
+xmlbuilder@~11.0.0:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-11.0.1.tgz#be9bae1c8a046e76b31127726347d0ad7002beb3"
+  integrity sha512-fDlsI/kFEx7gLvbecc0/ohLG50fugQp8ryHzMTuW9vSa1GJ0XYWKnhsUx7oie3G98+r56aTQIUB4kht42R3JvA==
 
 xmlbuilder@~9.0.1:
   version "9.0.7"
